@@ -19,7 +19,7 @@ namespace YilanOyunu
             InitializeComponent();
         }
 
-         
+        Random random = new Random();
         List<Box> boxesList = new List<Box>();
         List<Box> sneaks = new List<Box>(); 
         Sneak sneak;
@@ -191,7 +191,6 @@ namespace YilanOyunu
 
         public void AddFeed()
         {
-            Random random = new Random();
             int a = random.Next(0, 750);
             if (boxesList[a].Wall || boxesList[a].queue)
             {
